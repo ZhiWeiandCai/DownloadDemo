@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mList.add(fileInfo2);
         mFLAdapter = new FileListAdapter(this, mList);
         mLv.setAdapter(mFLAdapter);
-
+        //广播解释器
         IntentFilter filter = new IntentFilter();
         filter.addAction(DownloadService.DownloadUpdate);
         filter.addAction(DownloadService.DownloadFinish);
